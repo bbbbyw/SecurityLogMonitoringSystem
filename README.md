@@ -166,8 +166,3 @@ curl -X POST "$API_URL/api/logs" \
 - 500 on detection: check BigQuery location/env and function logs
 - 403 publish: ensure Cloud Run SA has `roles/pubsub.publisher`
 - No emails: confirm Gmail App Password (no spaces) and allow function egress
-
-### License
-MIT
-
-
