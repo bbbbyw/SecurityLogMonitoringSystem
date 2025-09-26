@@ -1,0 +1,80 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cloud Functions (Node)
+functions/**/node_modules/
+functions/**/npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Environment and secrets (do not commit)
+.env
+.env.*
+*.env
+*.secret
+*.secrets
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+# Common credential file patterns (keep schema.json etc.)
+credentials*.json
+service-account*.json
+sa-*.json
+key-*.json
+oauth*.json
+client_secret*.json
+
+# Build/artifacts
+dist/
+build/
+.cache/
+.tmp/
+coverage/
+.nyc_output/
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Additional env/local files
+.env
+.env.local
+.npmrc
+.python-version
+
+# Archives / large artifacts
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# Temp/backup files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Exclude deployment folder
+deploy/

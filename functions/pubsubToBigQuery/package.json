@@ -1,0 +1,15 @@
+{
+  "name": "pubsub-to-bigquery",
+  "version": "1.0.0",
+  "description": "Cloud Function (Gen2) to insert Pub/Sub messages into BigQuery",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.7.0"
+  }
+}
+
+

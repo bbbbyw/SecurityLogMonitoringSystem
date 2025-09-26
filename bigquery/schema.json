@@ -1,0 +1,14 @@
+[
+  { "name": "customerId", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "userId", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "event", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "ip", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "device", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "metadata", "type": "JSON", "mode": "NULLABLE" },
+  { "name": "userAgent", "type": "STRING", "mode": "NULLABLE" },
+  { "name": "requestIp", "type": "STRING", "mode": "NULLABLE" },
+  { "name": "receivedAt", "type": "TIMESTAMP", "mode": "REQUIRED" },
+  { "name": "eventTime", "type": "TIMESTAMP", "mode": "REQUIRED" }
+]
+
+

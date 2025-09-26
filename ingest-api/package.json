@@ -1,0 +1,22 @@
+{
+  "name": "ingest-api",
+  "version": "1.0.0",
+  "description": "Cloud Run ingestion API for Security Log Monitoring System",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^5.2.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "express": "^4.19.2"
+  }
+}
+
+
