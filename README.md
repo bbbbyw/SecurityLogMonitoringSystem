@@ -1,6 +1,6 @@
 ## Security Log Monitoring System (GCP)
 
-Turn raw security events into actionable alerts. This project ingests logs, detects brute‑force behavior, and notifies you via Email and all built on fully managed GCP services.
+Turn raw security events into actionable alerts. This project ingests logs, detects brute‑force behavior, and notifies anomalies via Email. All built on fully managed GCP services.
 
 ### Why this is project?
 - Cloud‑native, serverless pipeline end‑to‑end (zero infra to manage)
@@ -68,8 +68,6 @@ bigquery/
   └─ schema.json            # BigQuery table schema
 generator/
   └─ generator.py           # Load generator (failed logins burst)
-deploy/
-  └─ setup.sh               # One-shot deploy helper (optional)
 ```
 
 ### Demo
