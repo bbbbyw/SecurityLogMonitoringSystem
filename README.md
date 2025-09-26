@@ -83,7 +83,7 @@ deploy/
 <img src="docs/images/Demo3.png" alt="Detection result" width="800" />
 
 4) Alerts: email sent when failed-logins exceed the threshold in the time window.
-<img src="docs/images/Demo4.jpg" alt="Email alert example" width="400" />
+<img src="docs/images/demo4.jpg" alt="Email alert example" width="400" />
 
 ### Quick start (local demo)
 1) Run the API locally
