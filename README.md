@@ -74,16 +74,16 @@ deploy/
 
 ### Demo
 1) Ingestion: run the generator to send random login events to API_URL. HTTP 202 means accepted/queued.
-<img src="docs/images/demo1.png" alt="Ingestion result" width="800" />
+<img src="docs/images/Demo1.png" alt="Ingestion result" width="800" />
 
 2) BigQuery: query the latest rows from security.logs to confirm data was delivered from Pub/Sub to BigQuery successfully.
-<img src="docs/images/demo2.png" alt="BigQuery result" width="800" />
+<img src="docs/images/Demo2.png" alt="BigQuery result" width="800" />
 
 3) Detection: trigger the function to show JSON results immediately (instead of waiting for Cloud Scheduler which runs automatically every 5 minutes).
-<img src="docs/images/demo3.png" alt="Detection result" width="800" />
+<img src="docs/images/Demo3.png" alt="Detection result" width="800" />
 
 4) Alerts: email sent when failed-logins exceed the threshold in the time window.
-<img src="docs/images/demo4.jpg" alt="Email alert example" width="600" />
+<img src="docs/images/Demo4.jpg" alt="Email alert example" width="400" />
 
 ### Quick start (local demo)
 1) Run the API locally
