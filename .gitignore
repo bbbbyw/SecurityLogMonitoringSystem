@@ -59,22 +59,5 @@ Thumbs.db
 .env.local
 .npmrc
 .python-version
-
-# Archives / large artifacts
-*.tar
-*.tar.gz
-*.tgz
-*.zip
-*.7z
-*.gz
-*.bz2
-*.xz
-
-# Temp/backup files
-*.tmp
-*.bak
-*.swp
-*.swo
-
 # Exclude deployment folder
 deploy/
