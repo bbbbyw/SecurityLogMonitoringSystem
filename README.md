@@ -2,7 +2,7 @@
 
 Turn raw security events into actionable alerts. This project ingests logs, detects brute‑force behavior, and notifies you via Email and all built on fully managed GCP services.
 
-### Why this is project?
+### Why this project?
 - Cloud‑native, serverless pipeline end‑to‑end (zero infra to manage)
 - Real‑time ingestion and near‑real‑time detection at scale
 - Extensible rules and alerting providers (email via Gmail SMTP; swap in others)
@@ -153,7 +153,7 @@ curl -X POST "$API_URL/api/logs" \
 - Functions: runDetection
   - `BQ_DATASET`, `BQ_TABLE`, `BQ_LOCATION` (must match dataset location)
   - `FAILURE_THRESHOLD` (default 5), `WINDOW_MINUTES` (default 5)
-  - Gmail: `GMAIL_USER`, `GMAIL_PASS` (App Password), `GMAIL_TO`(email send to), `GMAIL_FROM`(email send from)
+  - Gmail: `GMAIL_USER`(email send from), `GMAIL_PASS` (App Password), `GMAIL_TO`(email send to)
 
 ### Roadmap (SOON TO BE DEVELOP)
 - API keys per tenant, key rotation, rate limiting
