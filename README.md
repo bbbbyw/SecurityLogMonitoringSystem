@@ -13,9 +13,9 @@ Turn raw security events into actionable alerts. This project ingests logs, dete
 flowchart LR
   A[Client / App / Generator] -->|POST /api/logs| B[Cloud Run-Express API]
   B -->|publish| C[Pub/Sub security-logs]
-  C --> D[Cloud Functions Gen2-processLog]
+  C --> D[Cloud Functions Gen2 <br> processLog]
   D -->|insert rows| E[BigQuery-security.logs]
-  F[Cloud Scheduler-5 min] --> G[Cloud Functions Gen2-runDetection]
+  F[Cloud Scheduler-5 min] --> G[Cloud Functions Gen2 <br> runDetection]
   G -->|query| E
   G -->|email| H[Gmail SMTP-Alerts]
 ```
