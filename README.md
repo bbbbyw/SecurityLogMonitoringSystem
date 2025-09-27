@@ -11,13 +11,13 @@ Turn raw security events into actionable alerts. This project ingests logs, dete
 
 ```mermaid
 flowchart LR
-  A[Client / App / Generator] -->|POST /api/logs| B[Cloud Run\nExpress API]
-  B -->|publish| C[Pub/Sub\nsecurity-logs]
-  C --> D[Cloud Functions Gen2\nprocessLog]
-  D -->|insert rows| E[BigQuery\nsecurity.logs]
-  F[Cloud Scheduler\n*/5 min] --> G[Cloud Functions Gen2\nrunDetection]
+  A[Client / App / Generator] -->|POST /api/logs| B[Cloud Run-Express API]
+  B -->|publish| C[Pub/Sub security-logs]
+  C --> D[Cloud Functions Gen2-processLog]
+  D -->|insert rows| E[BigQuery-security.logs]
+  F[Cloud Scheduler-5 min] --> G[Cloud Functions Gen2-runDetection]
   G -->|query| E
-  G -->|email| H[Gmail SMTP\nAlerts]
+  G -->|email| H[Gmail SMTP-Alerts]
 ```
 
 ### Data flow (detection window)
