@@ -7,7 +7,7 @@ const datasetId = process.env.BQ_DATASET || "security";
 const tableId = process.env.BQ_TABLE || "logs";
 
 // Entry point: processLog
-// Trigger: Pub/Sub (topic: security-logs)
+// Trigger: Pub/Sub 
 exports.processLog = async (message) => {
 	try {
 		const dataBuffer = message.data ? Buffer.from(message.data, "base64") : null;
